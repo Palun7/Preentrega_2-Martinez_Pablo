@@ -12,6 +12,7 @@ body {
 }
 
 main {
+    border-top: .5px solid black;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
@@ -26,9 +27,21 @@ main {
     margin-bottom: 3%;
 }
 
+.titulo h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 4em;
+    text-decoration: underline;
+    margin-bottom: 5%;
+    letter-spacing: 6px;
+}
+
 @media (max-width: 575px) {
     .titulo {
         width: 95%;
+    }
+
+    .titulo h1 {
+        font-size: 2.5em;
     }
 }
 
@@ -199,6 +212,7 @@ footer a:hover {
 @media (max-width: 576px) {
     .logo {
         margin-top: 10px;
+        margin-left: 10px;
     }
 }
 
@@ -215,7 +229,16 @@ footer a:hover {
     border-radius: 5px;
     width: fit-content;
     height: fit-content;
+    background-color: rgb(94, 187, 156);
     margin: 20px;
+    transition-duration: .2s;
+}
+
+.imagenes div:hover {
+    padding: 5px;
+    border: 2px solid black;
+    box-shadow: 0 0 10px black;
+    transition-duration: .5s;
 }
 
 .imagenes div img {
@@ -239,6 +262,13 @@ footer a:hover {
     border-radius: 5px;
     padding: 5px;
     gap: 10px;
+    transition-duration: .2s;
+}
+
+.veterinarias div:hover {
+    background-color: rgb(83, 216, 172);
+    box-shadow: 0px 0px 10px black;
+    transition-duration: .5s;
 }
 
 iframe {
@@ -260,9 +290,17 @@ iframe {
     gap: 30px;
     width: 380px;
     height: fit-content;
+    background-color: rgb(94, 187, 156);
     border: 1px solid black;
     border-radius: 5px;
     padding: 10px;
+    transition-duration: .2s;
+}
+
+.consejos div:hover {
+    background-color: rgb(83, 216, 172);
+    box-shadow: 0px 0px 10px black;
+    transition-duration: .5s;
 }
 
 .consejos div h3 {
@@ -276,16 +314,18 @@ iframe {
 .yo {
     display: flex;
     align-items: center;
-    gap: 10%;
+    gap: 100px;
 }
 
 @media (max-width: 576px) {
     .yo {
         flex-direction: column;
+        gap: 15px;
     }
 
     .yo p {
         width: 350px;
+        text-align: center;
     }
 }
 
@@ -336,4 +376,8 @@ iframe {
     .telefono {
         width: 250px;
     }
+}
+
+nav div button:focus {
+    border: 2px solid black;
 }
