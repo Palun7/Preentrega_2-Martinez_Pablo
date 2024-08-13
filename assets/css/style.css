@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    list-style-type: none;
     font-family: "Roboto Slab", serif;
 }
 
@@ -82,6 +83,7 @@ main {
 .pagina {
     display: flex;
     flex-direction: column;
+    background-color: rgb(94, 187, 156);
     align-items: center;
     width: 400px;
     border: 1px solid black;
@@ -98,7 +100,7 @@ main {
 }
 
 .pagina:hover {
-    background-color: rgb(94, 187, 156);
+    background-color: rgb(55, 222, 166);
     transition-duration: .5s;
     box-shadow: 0 0 10px black;
 }
@@ -137,7 +139,6 @@ header {
 
 .nav-link {
     font-family: "Playfair Display", serif;
-    font-weight: bold;
     letter-spacing: 2px;
     font-size: 1.2em;
     color: black;
@@ -193,13 +194,8 @@ footer {
     align-items: center;
 }
 
-ul {
-    list-style-type: none;
-}
-
 a {
     font-family: "Playfair Display", serif;
-    font-weight: bold;
     letter-spacing: 2px;
     font-size: 1.2em;
     color: black;
@@ -288,6 +284,12 @@ footer a:hover {
 .imagenes div img {
     width: 350px;
     border-radius: 5px;
+    transition-duration: .2s;
+}
+
+.imagenes div img:hover {
+    scale: 1.03;
+    transition-duration: .5s;
 }
 
 .veterinarias {
@@ -313,6 +315,7 @@ footer a:hover {
     background-color: rgb(83, 216, 172);
     box-shadow: 0px 0px 10px black;
     transition-duration: .5s;
+    padding: 10px;
 }
 
 iframe {
@@ -397,6 +400,7 @@ iframe {
     border-radius: 5px;
     background-color: rgb(94, 187, 156);
     width: 300px;
+    height: 150px;
     margin: 30px;
     padding: 20px;
     transition-duration: .2s;
@@ -406,6 +410,7 @@ iframe {
     background-color: rgb(74, 248, 190);
     transition-duration: .5s;
     box-shadow: 0 0 10px black;
+    width: 330px;
 }
 
 .redes {
@@ -423,6 +428,7 @@ iframe {
     border-radius: 5px;
     background-color: rgb(94, 187, 156);
     width: 250px;
+    height: 150px;
     margin: 30px;
     padding: 20px;
     transition-duration: .2s;
@@ -432,6 +438,7 @@ iframe {
     background-color: rgb(74, 248, 190);
     transition-duration: .5s;
     box-shadow: 0 0 10px black;
+    width: 280px;
 }
 
 .redes a img {
