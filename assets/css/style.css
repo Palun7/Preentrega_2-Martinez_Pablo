@@ -12,6 +12,12 @@ body {
     min-height: 100vh;
 }
 
+@media only screen and (max-width: 500px) {
+    body {
+        width: 100vw;
+    }
+}
+
 main {
     flex-grow: 1;
     display: flex;
@@ -36,6 +42,10 @@ main {
 }
 
 @media only screen and (max-width: 575px) {
+    main {
+        overflow: auto;
+    }
+
     .titulo {
         width: 95%;
     }
@@ -339,12 +349,66 @@ iframe {
 
 .consejos {
     display: flex;
+    width: 95%;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
 }
 
-.consejos div {
+.consejos .consejos-texto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-radius: 5px;
+    background-color: rgb(103, 211, 175);
+    width: 100%;
+    padding: 50px;
+    margin: 20px;
+}
+
+.consejos .consejos-video {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-radius: 5px;
+    background-color: rgb(103, 211, 175);
+    width: 100%;
+    padding: 50px;
+    margin: 20px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .consejos .consejos-texto {
+        width: 80%;
+    }
+
+    .consejos .consejos-video {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .consejos .consejos-texto {
+        width: 90%;
+        padding: 0;
+    }
+
+    .consejos-texto div p {
+        display: flex;
+        flex-wrap: wrap;
+        width: 90vw;
+        height: auto;
+    }
+
+    .consejos .consejos-video {
+        width: 90%;
+        padding: 0;
+    }
+}
+
+.consejos .consejos-texto div {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -357,6 +421,44 @@ iframe {
     padding: 10px;
     transition-duration: .2s;
     margin-bottom: 20px;
+}
+
+.consejos .consejos-video div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 380px;
+    height: fit-content;
+    background-color: rgb(94, 187, 156);
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    transition-duration: .2s;
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 500px) {
+    .consejos .consejos-texto div {
+        width: 95%;
+        overflow: auto;
+    }
+
+    .consejos .consejos-video div {
+        width: 95%;
+    }
+}
+
+.consejos-video iframe {
+    width: 350px;
+    height: 250px;
+}
+
+@media only screen and (max-width: 500px) {
+    .consejos-video iframe {
+        width: 90%;
+        height: 20vh;
+    }
 }
 
 .consejos div:hover {
