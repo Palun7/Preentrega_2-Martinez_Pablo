@@ -1,0 +1,25 @@
+footer {
+    background-color: rgb(133, 133, 133);
+    /* background: linear-gradient(to bottom, aquamarine, rgb(133, 133, 133)); */
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+    a {
+        position: relative;
+        top: 5px;
+        right: 5vw;
+
+        &:hover {
+            background-color: rgb(133, 255, 214);
+        }
+    }
+}
+
+.footer-contacto {
+    background-color: rgb(133, 133, 133);
+    padding: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,35 @@
+.imagenes {
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    div {
+        border: 1px solid black;
+        border-radius: 5px;
+        width: fit-content;
+        height: fit-content;
+        background-color: rgb(94, 187, 156);
+        margin: 20px;
+        transition-duration: .2s;
+
+        img {
+            width: 350px;
+            border-radius: 5px;
+            transition-duration: .2s;
+
+            &:hover {
+                scale: 1.03;
+                transition-duration: .5s;
+            }
+        }
+
+        &:hover {
+            padding: 5px;
+            border: 2px solid black;
+            box-shadow: 0 0 10px black;
+            transition-duration: .5s;
+        }
+    }
+}

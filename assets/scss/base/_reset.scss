@@ -1,0 +1,41 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    font-family: "Roboto Slab", serif;
+}
+
+body {
+    background: linear-gradient(to bottom, rgb(255, 255, 255)10%,aquamarine 25% 90%, rgb(133, 133, 133));
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a {
+    font-family: "Playfair Display", serif;
+    letter-spacing: 2px;
+    font-size: 1.2em;
+    color: black;
+    text-decoration: none;
+    transition-duration: .3s;
+    border-radius: 5px;
+    padding: 5px;
+
+    &:hover {
+        color: blueviolet;
+        transition-duration: .5s;
+    }
+}
+
+iframe {
+    border: none;
+    border-radius: 5px;
+}

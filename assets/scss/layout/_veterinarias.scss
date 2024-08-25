@@ -1,0 +1,25 @@
+.veterinarias {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgb(94, 187, 156);
+        margin: 20px;
+        border: 1px solid black;
+        border-radius: 5px;
+        padding: 5px;
+        gap: 10px;
+        transition-duration: .2s;
+
+        &:hover {
+            background-color: rgb(83, 216, 172);
+            box-shadow: 0px 0px 10px black;
+            transition-duration: .5s;
+            padding: 10px;
+        }
+    }
+}

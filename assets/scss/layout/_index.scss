@@ -1,0 +1,35 @@
+.pagina-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    .pagina {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(94, 187, 156);
+        align-items: center;
+        width: 400px;
+        border: 1px solid black;
+        border-radius: 5px;
+        padding: 15px;
+        margin-bottom: 10px;
+        transition-duration: .3s;
+
+        a {
+            font-family: "Playfair Display", serif;
+            font-size: 2em;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        &:hover {
+            background-color: rgb(55, 222, 166);
+            transition-duration: .5s;
+            box-shadow: 0 0 10px black;
+        }
+    }
+}
