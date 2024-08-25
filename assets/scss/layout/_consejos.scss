@@ -1,9 +1,10 @@
 .consejos {
+    position: relative;
+    right: 1vw;
     display: flex;
-    width: 95%;
+    width: 90%;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
 
@@ -15,7 +16,6 @@
         background-color: rgb(103, 211, 175);
         width: 100%;
         padding: 50px;
-        margin: 20px;
         transition-duration: .3s;
 
         div {
@@ -63,12 +63,7 @@
         width: 100%;
         padding: 50px;
         margin: 20px;
-
-        iframe {
-            width: 350px;
-            height: 250px;
-        }
-
+        
         div {
             display: flex;
             flex-direction: column;
@@ -82,6 +77,12 @@
             padding: 10px;
             transition-duration: .3s;
             margin-bottom: 20px;
+            overflow: auto;
+
+            iframe {
+                width: 350px;
+                height: 250px;
+            }
 
             &:hover {
                 background-color: rgb(53, 236, 175);

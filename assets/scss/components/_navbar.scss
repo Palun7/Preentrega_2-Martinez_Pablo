@@ -3,63 +3,63 @@ header {
     /* display: flex; */
     align-items: center;
     background-color: rgb(103, 211, 175);
-}
 
-.logo {
-    width: 40px;
-    border-radius: 5px;
-    margin-left: 30px;
-}
+    .logo {
+        width: 40px;
+        border-radius: 5px;
+        margin-left: 30px;
+        transition-duration: .2s;
 
-.navbar {
-    background: linear-gradient(to bottom, rgb(103, 211, 175) 60%, white);
-}
+        &:hover {
+            scale: 1.1;
+            transition-duration: .5s;
+        }
+    }
 
-.navbar-nav {
-    gap: 10px;
-}
+    .navbar {
+        background: linear-gradient(to bottom, rgb(103, 211, 175) 60%, white);
+    }
 
-.link-hover {
-    font-family: "Playfair Display", serif;
-    letter-spacing: 2px;
-    font-size: 1.2em;
-    color: black;
-    text-decoration: none;
-    transition-duration: .3s;
-    border-radius: 5px;
-    padding: 3px;
+    .navbar-nav {
+        gap: 10px;
+    }
 
-    &:hover {
-        color: blueviolet;
-        background-color: aquamarine;
-        transition-duration: .5s;
+    .actual {
+        font-family: "Playfair Display", serif;
+        letter-spacing: 2px;
+        font-size: 1.2em;
+        color: black;
+        text-decoration: none;
+        transition-duration: .3s;
+        border-radius: 5px;
+        padding: 3px;
+        position: relative;
+        bottom: 3px;
+        box-shadow: 0 6px 10px 3px rgb(133, 133, 133);
+    }
+
+    .link-hover {
+        font-family: "Playfair Display", serif;
+        letter-spacing: 2px;
+        font-size: 1.2em;
+        color: black;
+        text-decoration: none;
+        transition-duration: .3s;
+        border-radius: 5px;
+        padding: 3px;
+    
+        &:hover {
+            color: blueviolet;
+            background-color: aquamarine;
+            transition-duration: .5s;
+        }
+    }
+
+    .position {
+        position: absolute;
+        right: 1vw;
     }
 }
-
-.actual {
-    font-family: "Playfair Display", serif;
-    letter-spacing: 2px;
-    font-size: 1.2em;
-    color: black;
-    text-decoration: none;
-    transition-duration: .3s;
-    border-radius: 5px;
-    padding: 3px;
-    position: relative;
-    bottom: 3px;
-    box-shadow: 0 6px 10px 3px rgb(133, 133, 133);
-}
-
-/* imagen del logo */
-nav div a img {
-    transition-duration: .2s;
-
-    &:hover {
-        scale: 1.1;
-        transition-duration: .5s;
-    }
-}
-/* fin imagen del logo */
 
 nav div button:focus {
     border: 2px solid black;

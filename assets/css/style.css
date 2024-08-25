@@ -45,38 +45,23 @@ header {
   align-items: center;
   background-color: rgb(103, 211, 175);
 }
-
-.logo {
+header .logo {
   width: 40px;
   border-radius: 5px;
   margin-left: 30px;
+  transition-duration: 0.2s;
 }
-
-.navbar {
-  background: linear-gradient(to bottom, rgb(103, 211, 175) 60%, white);
-}
-
-.navbar-nav {
-  gap: 10px;
-}
-
-.link-hover {
-  font-family: "Playfair Display", serif;
-  letter-spacing: 2px;
-  font-size: 1.2em;
-  color: black;
-  text-decoration: none;
-  transition-duration: 0.3s;
-  border-radius: 5px;
-  padding: 3px;
-}
-.link-hover:hover {
-  color: blueviolet;
-  background-color: aquamarine;
+header .logo:hover {
+  scale: 1.1;
   transition-duration: 0.5s;
 }
-
-.actual {
+header .navbar {
+  background: linear-gradient(to bottom, rgb(103, 211, 175) 60%, white);
+}
+header .navbar-nav {
+  gap: 10px;
+}
+header .actual {
   font-family: "Playfair Display", serif;
   letter-spacing: 2px;
   font-size: 1.2em;
@@ -89,17 +74,26 @@ header {
   bottom: 3px;
   box-shadow: 0 6px 10px 3px rgb(133, 133, 133);
 }
-
-/* imagen del logo */
-nav div a img {
-  transition-duration: 0.2s;
+header .link-hover {
+  font-family: "Playfair Display", serif;
+  letter-spacing: 2px;
+  font-size: 1.2em;
+  color: black;
+  text-decoration: none;
+  transition-duration: 0.3s;
+  border-radius: 5px;
+  padding: 3px;
 }
-nav div a img:hover {
-  scale: 1.1;
+header .link-hover:hover {
+  color: blueviolet;
+  background-color: aquamarine;
   transition-duration: 0.5s;
 }
+header .position {
+  position: absolute;
+  right: 1vw;
+}
 
-/* fin imagen del logo */
 nav div button:focus {
   border: 2px solid black;
 }
@@ -246,11 +240,12 @@ footer a:hover {
 }
 
 .consejos {
+  position: relative;
+  right: 1vw;
   display: flex;
-  width: 95%;
+  width: 90%;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
 }
@@ -262,7 +257,6 @@ footer a:hover {
   background-color: rgb(103, 211, 175);
   width: 100%;
   padding: 50px;
-  margin: 20px;
   transition-duration: 0.3s;
 }
 .consejos .consejos-texto div {
@@ -305,10 +299,6 @@ footer a:hover {
   padding: 50px;
   margin: 20px;
 }
-.consejos .consejos-video iframe {
-  width: 350px;
-  height: 250px;
-}
 .consejos .consejos-video div {
   display: flex;
   flex-direction: column;
@@ -322,6 +312,11 @@ footer a:hover {
   padding: 10px;
   transition-duration: 0.3s;
   margin-bottom: 20px;
+  overflow: auto;
+}
+.consejos .consejos-video div iframe {
+  width: 350px;
+  height: 250px;
 }
 .consejos .consejos-video div:hover {
   background-color: rgb(53, 236, 175);
@@ -423,13 +418,22 @@ footer a:hover {
   .pagina {
     width: 300px;
   }
+  .redes-container {
+    height: fit-content;
+  }
+  .redes-container .redes {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+  .imagenes div img {
+    width: 90vw;
+  }
 }
 @media only screen and (max-width: 500px) {
   body {
     width: 100vw;
   }
-}
-@media only screen and (max-width: 500px) {
   .consejos .consejos-texto div {
     width: 95%;
     overflow: auto;
@@ -437,10 +441,8 @@ footer a:hover {
   .consejos .consejos-video div {
     width: 95%;
   }
-}
-@media only screen and (max-width: 500px) {
   .consejos-video iframe {
-    width: 90%;
+    width: 90vw;
     height: 20vh;
   }
 }
@@ -454,44 +456,54 @@ footer a:hover {
   .titulo h1 {
     font-size: 2.5em;
   }
-}
-@media only screen and (max-width: 575px) {
   .titulo-index {
     width: 95%;
   }
-}
-@media only screen and (max-width: 575px) {
   .pagina-container {
     gap: 20px;
   }
-}
-@media only screen and (max-width: 576px) {
+  .pagina-container .pagina {
+    width: 90vw;
+    overflow: auto;
+  }
   header {
     height: fit-content;
     flex-direction: column;
     align-items: flex-start;
   }
-}
-@media only screen and (min-width: 576px) {
   .position {
+    background: linear-gradient(to bottom, rgb(103, 211, 175), white);
     position: absolute;
-    right: 2vw;
+    top: 70px;
+    left: 2vw;
   }
-}
-@media only screen and (max-width: 576px) {
   .logo {
     margin-top: 10px;
     margin-left: 10px;
   }
-}
-@media only screen and (max-width: 576px) {
   .yo {
     flex-direction: column;
     gap: 15px;
   }
+  .yo img {
+    width: 90vw;
+  }
   .yo p {
-    width: 350px;
+    width: 90vw;
     text-align: center;
+  }
+  .redes-container {
+    width: 90vw;
+    overflow: auto;
+  }
+  .redes-container:hover {
+    width: 97vw;
+  }
+  .telefono {
+    width: 75vw;
+  }
+  .telefono:hover {
+    width: 90vw;
   }
 }
 @media only screen and (max-width: 650px) {
