@@ -1,0 +1,17 @@
+@for $right from 1 through 5 {
+    .right-#{$right} {
+        position: relative;
+        right: $right * 1vw;
+    }
+}
+
+@for $margin from 1 through 10 {
+    .margin-left-#{$margin} {
+        margin-left: $margin * 1vw;
+    }
+}
+
+@mixin border {
+    border: 1px solid $negro;
+    border-radius: 5px;
+}
