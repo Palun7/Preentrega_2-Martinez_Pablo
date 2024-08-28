@@ -1,3 +1,68 @@
+.right-1 {
+  position: relative;
+  right: 1vw;
+}
+
+.right-2 {
+  position: relative;
+  right: 2vw;
+}
+
+.right-3 {
+  position: relative;
+  right: 3vw;
+}
+
+.right-4 {
+  position: relative;
+  right: 4vw;
+}
+
+.right-5 {
+  position: relative;
+  right: 5vw;
+}
+
+.margin-left-1 {
+  margin-left: 1vw;
+}
+
+.margin-left-2 {
+  margin-left: 2vw;
+}
+
+.margin-left-3 {
+  margin-left: 3vw;
+}
+
+.margin-left-4 {
+  margin-left: 4vw;
+}
+
+.margin-left-5 {
+  margin-left: 5vw;
+}
+
+.margin-left-6 {
+  margin-left: 6vw;
+}
+
+.margin-left-7 {
+  margin-left: 7vw;
+}
+
+.margin-left-8 {
+  margin-left: 8vw;
+}
+
+.margin-left-9 {
+  margin-left: 9vw;
+}
+
+.margin-left-10 {
+  margin-left: 10vw;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -23,7 +88,7 @@ a {
   font-family: "Playfair Display", serif;
   letter-spacing: 2px;
   font-size: 1.2em;
-  color: black;
+  color: rgb(0, 0, 0);
   text-decoration: none;
   transition-duration: 0.3s;
   border-radius: 5px;
@@ -65,7 +130,7 @@ header .actual {
   font-family: "Playfair Display", serif;
   letter-spacing: 2px;
   font-size: 1.2em;
-  color: black;
+  color: rgb(0, 0, 0);
   text-decoration: none;
   transition-duration: 0.3s;
   border-radius: 5px;
@@ -78,7 +143,7 @@ header .link-hover {
   font-family: "Playfair Display", serif;
   letter-spacing: 2px;
   font-size: 1.2em;
-  color: black;
+  color: rgb(0, 0, 0);
   text-decoration: none;
   transition-duration: 0.3s;
   border-radius: 5px;
@@ -95,7 +160,7 @@ header .position {
 }
 
 nav div button:focus {
-  border: 2px solid black;
+  border: 2px solid rgb(0, 0, 0);
 }
 
 footer {
@@ -111,7 +176,7 @@ footer a {
   right: 5vw;
 }
 footer a:hover {
-  background-color: rgb(133, 255, 214);
+  background-color: aquamarine;
 }
 
 .footer-contacto {
@@ -131,6 +196,7 @@ footer a:hover {
 }
 .titulo h1 {
   font-family: "Playfair Display", serif;
+  color: rgb(0, 0, 0);
   font-size: 4em;
   text-decoration: underline;
   margin-bottom: 5%;
@@ -145,6 +211,7 @@ footer a:hover {
 }
 .titulo-index h1 {
   font-family: "Playfair Display", serif;
+  color: rgb(0, 0, 0);
   font-size: 4em;
   text-decoration: underline;
   margin-bottom: 5%;
@@ -163,8 +230,9 @@ footer a:hover {
   flex-direction: column;
   background-color: rgb(94, 187, 156);
   align-items: center;
+  height: 170px;
   width: 400px;
-  border: 1px solid black;
+  border: 1px solid rgb(0, 0, 0);
   border-radius: 5px;
   padding: 15px;
   margin-bottom: 10px;
@@ -179,8 +247,12 @@ footer a:hover {
 }
 .pagina-container .pagina:hover {
   background-color: rgb(55, 222, 166);
+  box-shadow: 0 0 10px rgb(0, 0, 0);
+  height: 200px;
   transition-duration: 0.5s;
-  box-shadow: 0 0 10px black;
+}
+.pagina-container .pagina:hover a {
+  font-size: 3em;
 }
 
 .imagenes {
@@ -191,7 +263,7 @@ footer a:hover {
   flex-wrap: wrap;
 }
 .imagenes div {
-  border: 1px solid black;
+  border: 1px solid rgb(0, 0, 0);
   border-radius: 5px;
   width: fit-content;
   height: fit-content;
@@ -210,8 +282,8 @@ footer a:hover {
 }
 .imagenes div:hover {
   padding: 5px;
-  border: 2px solid black;
-  box-shadow: 0 0 10px black;
+  border: 2px solid rgb(0, 0, 0);
+  box-shadow: 0 0 10px rgb(0, 0, 0);
   transition-duration: 0.5s;
 }
 
@@ -225,8 +297,10 @@ footer a:hover {
   flex-direction: column;
   align-items: center;
   background-color: rgb(94, 187, 156);
+  height: 100px;
+  overflow: hidden;
   margin: 20px;
-  border: 1px solid black;
+  border: 1px solid rgb(0, 0, 0);
   border-radius: 5px;
   padding: 5px;
   gap: 10px;
@@ -234,14 +308,16 @@ footer a:hover {
 }
 .veterinarias div:hover {
   background-color: rgb(83, 216, 172);
-  box-shadow: 0px 0px 10px black;
-  transition-duration: 0.5s;
+  box-shadow: 0px 0px 10px rgb(0, 0, 0);
   padding: 10px;
+  height: 320px;
+  transition-duration: 0.5s;
+}
+.veterinarias div:hover h3 {
+  color: blueviolet;
 }
 
 .consejos {
-  position: relative;
-  right: 1vw;
   display: flex;
   width: 90%;
   flex-direction: column;
@@ -253,6 +329,7 @@ footer a:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  border: 1px solid rgb(0, 0, 0);
   border-radius: 5px;
   background-color: rgb(103, 211, 175);
   width: 100%;
@@ -267,7 +344,7 @@ footer a:hover {
   width: 380px;
   height: fit-content;
   background-color: rgb(94, 187, 156);
-  border: 1px solid black;
+  border: 1px solid rgb(0, 0, 0);
   border-radius: 5px;
   padding: 10px;
   transition-duration: 0.3s;
@@ -275,8 +352,11 @@ footer a:hover {
 }
 .consejos .consejos-texto div:hover {
   background-color: rgb(53, 236, 175);
-  box-shadow: 0px 0px 10px black;
+  box-shadow: 0px 0px 10px rgb(0, 0, 0);
   transition-duration: 0.5s;
+}
+.consejos .consejos-texto div:hover h3 {
+  color: blueviolet;
 }
 .consejos .consejos-texto h3 {
   text-align: center;
@@ -286,13 +366,14 @@ footer a:hover {
 }
 .consejos .consejos-texto:hover {
   background-color: rgb(83, 216, 172);
-  box-shadow: 0px 0px 10px black;
+  box-shadow: 0px 0px 10px rgb(0, 0, 0);
   transition-duration: 0.5s;
 }
 .consejos .consejos-video {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  border: 1px solid rgb(0, 0, 0);
   border-radius: 5px;
   background-color: rgb(103, 211, 175);
   width: 100%;
@@ -307,7 +388,7 @@ footer a:hover {
   width: 380px;
   height: fit-content;
   background-color: rgb(94, 187, 156);
-  border: 1px solid black;
+  border: 1px solid rgb(0, 0, 0);
   border-radius: 5px;
   padding: 10px;
   transition-duration: 0.3s;
@@ -320,8 +401,11 @@ footer a:hover {
 }
 .consejos .consejos-video div:hover {
   background-color: rgb(53, 236, 175);
-  box-shadow: 0px 0px 10px black;
+  box-shadow: 0px 0px 10px rgb(0, 0, 0);
   transition-duration: 0.5s;
+}
+.consejos .consejos-video div:hover h3 {
+  color: blueviolet;
 }
 .consejos .consejos-video h3 {
   text-align: center;
@@ -331,7 +415,7 @@ footer a:hover {
 }
 .consejos .consejos-video:hover {
   background-color: rgb(83, 216, 172);
-  box-shadow: 0px 0px 10px black;
+  box-shadow: 0px 0px 10px rgb(0, 0, 0);
   transition-duration: 0.5s;
 }
 
@@ -346,11 +430,11 @@ footer a:hover {
   width: 350px;
   border-radius: 5px;
   transition-duration: 0.5s;
-  box-shadow: 2px 2px 5px black;
+  box-shadow: 2px 2px 5px rgb(0, 0, 0);
 }
 .yo img:hover {
   transition-duration: 0.5s;
-  box-shadow: 2px 2px 20px black;
+  box-shadow: 2px 2px 20px rgb(0, 0, 0);
 }
 
 .redes-container {
@@ -358,7 +442,7 @@ footer a:hover {
   flex-direction: column;
   align-items: center;
   gap: 30px;
-  border: 1px solid black;
+  border: 1px solid rgb(0, 0, 0);
   border-radius: 5px;
   background-color: rgb(94, 187, 156);
   width: 300px;
@@ -382,7 +466,7 @@ footer a:hover {
 .redes-container:hover {
   background-color: rgb(74, 248, 190);
   transition-duration: 0.5s;
-  box-shadow: 0 0 10px black;
+  box-shadow: 0 0 10px rgb(0, 0, 0);
   width: 330px;
 }
 
@@ -391,7 +475,7 @@ footer a:hover {
   flex-direction: column;
   align-items: center;
   gap: 30px;
-  border: 1px solid black;
+  border: 1px solid rgb(0, 0, 0);
   border-radius: 5px;
   background-color: rgb(94, 187, 156);
   width: 250px;
@@ -410,7 +494,7 @@ footer a:hover {
 .telefono:hover {
   background-color: rgb(74, 248, 190);
   transition-duration: 0.5s;
-  box-shadow: 0 0 10px black;
+  box-shadow: 0 0 10px rgb(0, 0, 0);
   width: 280px;
 }
 

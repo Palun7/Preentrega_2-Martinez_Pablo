@@ -1,6 +1,4 @@
 .consejos {
-    position: relative;
-    right: 1vw;
     display: flex;
     width: 90%;
     flex-direction: column;
@@ -12,7 +10,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
-        border-radius: 5px;
+        @include border;
         background-color: rgb(103, 211, 175);
         width: 100%;
         padding: 50px;
@@ -26,16 +24,19 @@
             width: 380px;
             height: fit-content;
             background-color: rgb(94, 187, 156);
-            border: 1px solid black;
-            border-radius: 5px;
+            @include border;
             padding: 10px;
             transition-duration: .3s;
             margin-bottom: 20px;
 
             &:hover {
                 background-color: rgb(53, 236, 175);
-                box-shadow: 0px 0px 10px black;
+                box-shadow: 0px 0px 10px $negro;
                 transition-duration: .5s;
+
+                h3 {
+                    color: $hover-text;
+                }
             }
         }
 
@@ -49,7 +50,7 @@
 
         &:hover {
             background-color: rgb(83, 216, 172);
-            box-shadow: 0px 0px 10px black;
+            box-shadow: 0px 0px 10px $negro;
             transition-duration: .5s;
         }
     }
@@ -58,12 +59,12 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
-        border-radius: 5px;
+        @include border;
         background-color: rgb(103, 211, 175);
         width: 100%;
         padding: 50px;
         margin: 20px;
-        
+
         div {
             display: flex;
             flex-direction: column;
@@ -72,8 +73,7 @@
             width: 380px;
             height: fit-content;
             background-color: rgb(94, 187, 156);
-            border: 1px solid black;
-            border-radius: 5px;
+            @include border;
             padding: 10px;
             transition-duration: .3s;
             margin-bottom: 20px;
@@ -86,8 +86,12 @@
 
             &:hover {
                 background-color: rgb(53, 236, 175);
-                box-shadow: 0px 0px 10px black;
+                box-shadow: 0px 0px 10px $negro;
                 transition-duration: .5s;
+
+                h3 {
+                    color: $hover-text;
+                }
             }
         }
 
@@ -101,7 +105,7 @@
 
         &:hover {
             background-color: rgb(83, 216, 172);
-            box-shadow: 0px 0px 10px black;
+            box-shadow: 0px 0px 10px $negro;
             transition-duration: .5s;
         }
     }

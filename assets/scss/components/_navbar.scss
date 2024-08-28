@@ -28,7 +28,7 @@ header {
         font-family: "Playfair Display", serif;
         letter-spacing: 2px;
         font-size: 1.2em;
-        color: black;
+        color: $negro;
         text-decoration: none;
         transition-duration: .3s;
         border-radius: 5px;
@@ -42,15 +42,15 @@ header {
         font-family: "Playfair Display", serif;
         letter-spacing: 2px;
         font-size: 1.2em;
-        color: black;
+        color: $negro;
         text-decoration: none;
         transition-duration: .3s;
         border-radius: 5px;
         padding: 3px;
     
         &:hover {
-            color: blueviolet;
-            background-color: aquamarine;
+            color: $hover-text;
+            background-color: $hover-link;
             transition-duration: .5s;
         }
     }
@@ -62,5 +62,6 @@ header {
 }
 
 nav div button:focus {
-    border: 2px solid black;
+    border: 2px solid $negro;
 }
+

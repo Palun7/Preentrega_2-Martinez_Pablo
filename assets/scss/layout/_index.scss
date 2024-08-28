@@ -10,9 +10,9 @@
         flex-direction: column;
         background-color: rgb(94, 187, 156);
         align-items: center;
+        height: 170px;
         width: 400px;
-        border: 1px solid black;
-        border-radius: 5px;
+        @include border;
         padding: 15px;
         margin-bottom: 10px;
         transition-duration: .3s;
@@ -28,8 +28,13 @@
 
         &:hover {
             background-color: rgb(55, 222, 166);
+            box-shadow: 0 0 10px $negro;
+            height: 200px;
             transition-duration: .5s;
-            box-shadow: 0 0 10px black;
+
+            a {
+                font-size: 3em;
+            }
         }
     }
 }

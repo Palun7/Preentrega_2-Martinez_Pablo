@@ -6,8 +6,7 @@
     flex-wrap: wrap;
 
     div {
-        border: 1px solid black;
-        border-radius: 5px;
+        @include border;
         width: fit-content;
         height: fit-content;
         background-color: rgb(94, 187, 156);
@@ -27,8 +26,8 @@
 
         &:hover {
             padding: 5px;
-            border: 2px solid black;
-            box-shadow: 0 0 10px black;
+            border: 2px solid $negro;
+            box-shadow: 0 0 10px $negro;
             transition-duration: .5s;
         }
     }
