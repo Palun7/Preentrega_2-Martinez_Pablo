@@ -15,3 +15,7 @@
     border: 1px solid $negro;
     border-radius: 5px;
 }
+
+@mixin shadow {
+    box-shadow: 4px 4px 5px $negro;
+}
