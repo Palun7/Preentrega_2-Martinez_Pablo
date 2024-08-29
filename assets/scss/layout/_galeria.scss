@@ -2,7 +2,7 @@
     width: 95%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: wrap;
 
     div {
@@ -11,6 +11,7 @@
         height: fit-content;
         background-color: rgb(94, 187, 156);
         margin: 20px;
+        overflow: hidden;
         transition-duration: .2s;
 
         img {
@@ -19,16 +20,10 @@
             transition-duration: .2s;
 
             &:hover {
-                scale: 1.03;
+                // scale: 1.03;
+                transform: scale(1.05);
                 transition-duration: .5s;
             }
-        }
-
-        &:hover {
-            padding: 5px;
-            border: 2px solid $negro;
-            box-shadow: 0 0 10px $negro;
-            transition-duration: .5s;
         }
     }
 }
