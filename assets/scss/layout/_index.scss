@@ -1,18 +1,14 @@
 .pagina-container {
     width: 100%;
-    display: flex;
-    justify-content: space-around;
+    @include flex(row, space-around, start, 20px);
     flex-wrap: wrap;
-    gap: 20px;
 
     .pagina {
-        display: flex;
-        flex-direction: column;
+        @include flex(column, start, center, 0);
+        @include border;
         background-color: rgb(94, 187, 156);
-        align-items: center;
         height: 170px;
         width: 400px;
-        @include border;
         padding: 15px;
         margin-bottom: 10px;
         transition-duration: .3s;

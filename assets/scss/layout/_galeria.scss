@@ -1,8 +1,6 @@
 .imagenes {
     width: 95%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    @include flex(row, center, start, 0);
     flex-wrap: wrap;
 
     div {

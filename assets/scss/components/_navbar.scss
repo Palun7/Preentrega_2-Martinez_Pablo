@@ -1,7 +1,5 @@
 header {
     height: 7vh;
-    /* display: flex; */
-    align-items: center;
     background-color: rgb(103, 211, 175);
 
     .logo {
@@ -11,8 +9,6 @@ header {
         transition-duration: .2s;
 
         &:hover {
-            // scale: 1.1;
-            // transition-duration: .5s;
             position: relative;
             animation-name: icono;
             animation-duration: .4s;

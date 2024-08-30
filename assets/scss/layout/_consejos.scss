@@ -1,15 +1,11 @@
 .consejos {
-    display: flex;
+    @include flex(column, start, center, 20px);
     width: 90%;
-    flex-direction: column;
-    align-items: center;
     flex-wrap: wrap;
-    gap: 20px;
 
     .consejos-texto {
-        display: flex;
+        @include flex(row, space-around, start, 0);
         flex-wrap: wrap;
-        justify-content: space-around;
         @include border;
         background-color: rgb(103, 211, 175);
         width: 100%;
@@ -17,10 +13,7 @@
         transition-duration: .3s;
 
         div {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 30px;
+            @include flex(column, start, center, 30px);
             width: 380px;
             height: fit-content;
             background-color: rgb(94, 187, 156);
@@ -56,9 +49,8 @@
     }
 
     .consejos-video {
-        display: flex;
+        @include flex(row, space-around, start, 0);
         flex-wrap: wrap;
-        justify-content: space-around;
         @include border;
         background-color: rgb(103, 211, 175);
         width: 100%;
@@ -66,10 +58,7 @@
         margin: 20px;
 
         div {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 30px;
+            @include flex(column, start, center, 30px);
             width: 380px;
             height: fit-content;
             background-color: rgb(94, 187, 156);

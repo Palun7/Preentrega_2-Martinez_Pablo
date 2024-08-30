@@ -19,3 +19,11 @@
 @mixin shadow {
     box-shadow: 4px 4px 5px $negro;
 }
+
+@mixin flex($direction, $justify, $aling, $gap) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $aling;
+    gap: $gap;
+}

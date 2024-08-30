@@ -1,19 +1,15 @@
 .veterinarias {
-    display: flex;
-    justify-content: center;
+    @include flex(row, center, start, 0);
     flex-wrap: wrap;
 
     div {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include flex(column, start, center, 10px);
+        @include border;
         background-color: rgb(94, 187, 156);
         height: 100px;
         overflow: hidden;
         margin: 20px;
-        @include border;
         padding: 5px;
-        gap: 10px;
         transition-duration: .2s;
 
         &:hover {

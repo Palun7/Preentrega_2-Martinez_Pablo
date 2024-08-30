@@ -1,9 +1,6 @@
 footer {
     background-color: $fondo-footer;
-    /* background: linear-gradient(to bottom, aquamarine, rgb(133, 133, 133)); */
-    display: flex;
-    justify-content: end;
-    align-items: center;
+    @include flex(row, end, center, 0);
 
     a {
         position: relative;
@@ -19,7 +16,10 @@ footer {
 .footer-contacto {
     background-color: $fondo-footer;
     padding: 1%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex(row, center, center, 0);
+
+    h5 {
+        position: relative;
+        left: 5vw;
+    }
 }

@@ -106,8 +106,6 @@ iframe {
 
 header {
   height: 7vh;
-  /* display: flex; */
-  align-items: center;
   background-color: rgb(103, 211, 175);
 }
 header .logo {
@@ -211,10 +209,11 @@ nav div button:focus {
 }
 footer {
   background-color: rgb(133, 133, 133);
-  /* background: linear-gradient(to bottom, aquamarine, rgb(133, 133, 133)); */
   display: flex;
+  flex-direction: row;
   justify-content: end;
   align-items: center;
+  gap: 0;
 }
 footer a {
   position: relative;
@@ -229,8 +228,14 @@ footer a:hover {
   background-color: rgb(133, 133, 133);
   padding: 1%;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+  gap: 0;
+}
+.footer-contacto h5 {
+  position: relative;
+  left: 5vw;
 }
 
 .titulo {
@@ -267,19 +272,23 @@ footer a:hover {
 .pagina-container {
   width: 100%;
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
-  flex-wrap: wrap;
+  align-items: start;
   gap: 20px;
+  flex-wrap: wrap;
 }
 .pagina-container .pagina {
   display: flex;
   flex-direction: column;
-  background-color: rgb(94, 187, 156);
+  justify-content: start;
   align-items: center;
-  height: 170px;
-  width: 400px;
+  gap: 0;
   border: 1px solid rgb(0, 0, 0);
   border-radius: 5px;
+  background-color: rgb(94, 187, 156);
+  height: 170px;
+  width: 400px;
   padding: 15px;
   margin-bottom: 10px;
   transition-duration: 0.3s;
@@ -306,8 +315,10 @@ footer a:hover {
 .imagenes {
   width: 95%;
   display: flex;
+  flex-direction: row;
   justify-content: center;
-  align-items: flex-start;
+  align-items: start;
+  gap: 0;
   flex-wrap: wrap;
 }
 .imagenes div {
@@ -332,21 +343,25 @@ footer a:hover {
 
 .veterinarias {
   display: flex;
+  flex-direction: row;
   justify-content: center;
+  align-items: start;
+  gap: 0;
   flex-wrap: wrap;
 }
 .veterinarias div {
   display: flex;
   flex-direction: column;
+  justify-content: start;
   align-items: center;
+  gap: 10px;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 5px;
   background-color: rgb(94, 187, 156);
   height: 100px;
   overflow: hidden;
   margin: 20px;
-  border: 1px solid rgb(0, 0, 0);
-  border-radius: 5px;
   padding: 5px;
-  gap: 10px;
   transition-duration: 0.2s;
 }
 .veterinarias div:hover {
@@ -362,16 +377,20 @@ footer a:hover {
 
 .consejos {
   display: flex;
-  width: 90%;
   flex-direction: column;
+  justify-content: start;
   align-items: center;
-  flex-wrap: wrap;
   gap: 20px;
+  width: 90%;
+  flex-wrap: wrap;
 }
 .consejos .consejos-texto {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: space-around;
+  align-items: start;
+  gap: 0;
+  flex-wrap: wrap;
   border: 1px solid rgb(0, 0, 0);
   border-radius: 5px;
   background-color: rgb(103, 211, 175);
@@ -382,6 +401,7 @@ footer a:hover {
 .consejos .consejos-texto div {
   display: flex;
   flex-direction: column;
+  justify-content: start;
   align-items: center;
   gap: 30px;
   width: 380px;
@@ -414,8 +434,11 @@ footer a:hover {
 }
 .consejos .consejos-video {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: space-around;
+  align-items: start;
+  gap: 0;
+  flex-wrap: wrap;
   border: 1px solid rgb(0, 0, 0);
   border-radius: 5px;
   background-color: rgb(103, 211, 175);
@@ -426,6 +449,7 @@ footer a:hover {
 .consejos .consejos-video div {
   display: flex;
   flex-direction: column;
+  justify-content: start;
   align-items: center;
   gap: 30px;
   width: 380px;
@@ -464,6 +488,8 @@ footer a:hover {
 
 .yo {
   display: flex;
+  flex-direction: row;
+  justify-content: start;
   align-items: center;
   gap: 100px;
   padding: 10px;
@@ -483,6 +509,7 @@ footer a:hover {
 .redes-container {
   display: flex;
   flex-direction: column;
+  justify-content: start;
   align-items: center;
   gap: 30px;
   border: 1px solid rgb(0, 0, 0);
@@ -496,7 +523,10 @@ footer a:hover {
 }
 .redes-container .redes {
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
+  align-items: start;
+  gap: 0;
   width: 100%;
 }
 .redes-container .redes a img {
@@ -516,6 +546,7 @@ footer a:hover {
 .telefono {
   display: flex;
   flex-direction: column;
+  justify-content: start;
   align-items: center;
   gap: 30px;
   border: 1px solid rgb(0, 0, 0);
@@ -543,18 +574,23 @@ footer a:hover {
 
 .tiendas {
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
+  align-items: start;
+  gap: 0;
   width: 95vw;
   flex-wrap: wrap;
 }
 .tiendas .tienda {
   display: flex;
   flex-direction: column;
+  justify-content: start;
   align-items: center;
-  height: 260px;
-  width: 320px;
+  gap: 0;
   border: 1px solid rgb(0, 0, 0);
   border-radius: 5px;
+  height: 260px;
+  width: 320px;
   background-color: rgb(94, 187, 156);
   padding: 5px;
   text-align: center;
@@ -567,11 +603,13 @@ footer a:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  align-items: center;
+  gap: 0;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 5px;
   width: 90%;
   height: 0;
   padding: 0 10px;
-  border: 1px solid rgb(0, 0, 0);
-  border-radius: 5px;
   margin: 10px;
   overflow: hidden;
   transition-duration: 0.3s;
@@ -620,6 +658,12 @@ footer a:hover {
   }
   .imagenes div img {
     width: 90vw;
+  }
+  .footer-contacto {
+    text-align: center;
+  }
+  .footer-contacto h5 {
+    font-size: 0.8em;
   }
 }
 @media only screen and (max-width: 500px) {

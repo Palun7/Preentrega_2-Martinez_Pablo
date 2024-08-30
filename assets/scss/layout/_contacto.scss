@@ -1,7 +1,5 @@
 .yo {
-    display: flex;
-    align-items: center;
-    gap: 100px;
+    @include flex(row, start, center, 100px);
     padding: 10px;
 
     img {
@@ -19,10 +17,7 @@
 }
 
 .redes-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
+    @include flex(column, start, center, 30px);
     @include border;
     background-color: rgb(94, 187, 156);
     width: 300px;
@@ -32,8 +27,7 @@
     transition-duration: .2s;
 
     .redes {
-        display: flex;
-        justify-content: space-around;
+        @include flex(row, space-around, start, 0);
         width: 100%;
 
         a {
@@ -57,10 +51,7 @@
 }
 
 .telefono {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
+    @include flex(column, start, center, 30px);
     @include border;
     background-color: rgb(94, 187, 156);
     width: 250px;
