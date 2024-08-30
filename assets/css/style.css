@@ -250,6 +250,7 @@ footer a:hover {
   color: rgb(0, 0, 0);
   font-size: 4em;
   text-decoration: underline;
+  margin-top: 20px;
   margin-bottom: 5%;
   letter-spacing: 6px;
 }
@@ -265,6 +266,7 @@ footer a:hover {
   color: rgb(0, 0, 0);
   font-size: 4em;
   text-decoration: underline;
+  margin-top: 20px;
   margin-bottom: 5%;
   letter-spacing: 6px;
 }
@@ -593,6 +595,7 @@ footer a:hover {
   width: 320px;
   background-color: rgb(94, 187, 156);
   padding: 5px;
+  margin: 10px;
   text-align: center;
   transition-duration: 0.3s;
 }
@@ -699,6 +702,7 @@ footer a:hover {
     gap: 20px;
   }
   .pagina-container .pagina {
+    height: 200px;
     width: 90vw;
     overflow: auto;
   }
@@ -756,12 +760,6 @@ footer a:hover {
   .consejos .consejos-video {
     width: 90%;
     padding: 0;
-  }
-  .tiendas {
-    width: 90vw;
-  }
-  .tiendas .tienda {
-    margin: 10px;
   }
 }
 @media only screen and (max-width: 1000px) {
