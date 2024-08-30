@@ -757,6 +757,12 @@ footer a:hover {
     width: 90%;
     padding: 0;
   }
+  .tiendas {
+    width: 90vw;
+  }
+  .tiendas .tienda {
+    margin: 10px;
+  }
 }
 @media only screen and (max-width: 1000px) {
   .consejos .consejos-texto {
