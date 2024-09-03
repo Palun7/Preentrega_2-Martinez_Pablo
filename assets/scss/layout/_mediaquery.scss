@@ -35,11 +35,6 @@
         width: 100vw;
     }
 
-    .consejos .consejos-texto div {
-        width: 95%;
-        overflow: auto;
-    }
-
     .consejos .consejos-video div {
         width: 95%;
     }
@@ -93,6 +88,27 @@
     .logo {
         margin-top: 10px;
         margin-left: 10px;
+    }
+
+    .consejos {
+        width: 100vw;
+    }
+
+    .consejos .consejos-texto {
+        width: 100%;
+    }
+
+    .consejos .consejos-texto div {
+        width: 98%;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        overflow: auto;
+
+        h3 {
+            width: 90%;
+            display: flex;
+            flex-wrap: wrap;
+        }
     }
 
     .yo {
