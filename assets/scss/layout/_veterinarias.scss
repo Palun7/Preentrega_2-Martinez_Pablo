@@ -6,17 +6,23 @@
         @include flex(column, start, center, 10px);
         @include border;
         background-color: rgb(94, 187, 156);
-        height: 100px;
+        height: 420px;
+        width: 320px;
         overflow: hidden;
         margin: 20px;
         padding: 5px;
         transition-duration: .2s;
 
+        img {
+            width: 95%;
+            border-radius: 5px;
+        }
+
         &:hover {
             background-color: rgb(83, 216, 172);
             box-shadow: 0px 0px 10px $negro;
             padding: 10px;
-            height: 320px;
+            height: 650px;
             transition-duration: .5s;
 
             h3 {

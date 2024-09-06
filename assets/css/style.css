@@ -77,6 +77,10 @@ body {
   min-height: 100vh;
 }
 
+.body-veterinarias {
+  min-height: 120vh;
+}
+
 main {
   flex-grow: 1;
   display: flex;
@@ -95,7 +99,8 @@ a {
   padding: 5px;
 }
 a:hover {
-  color: blueviolet;
+  color: rgb(56, 13, 97);
+  background-color: rgb(48, 255, 186);
   transition-duration: 0.5s;
 }
 
@@ -113,6 +118,7 @@ header .logo {
   border-radius: 5px;
   margin-left: 30px;
   transition-duration: 0.2s;
+  box-shadow: 4px 4px 5px rgb(0, 0, 0);
 }
 header .logo:hover {
   position: relative;
@@ -126,6 +132,13 @@ header .navbar {
 }
 header .navbar-nav {
   gap: 10px;
+}
+header .navbar-toggler {
+  box-shadow: 4px 4px 5px rgb(0, 0, 0);
+  border: 2px solid rgb(0, 0, 0);
+  border-top: 1px solid rgb(233, 233, 233);
+  border-left: 1px solid rgb(233, 233, 233);
+  background-color: rgb(188, 188, 188);
 }
 header .actual {
   font-family: "Playfair Display", serif;
@@ -152,9 +165,12 @@ header .link-hover {
   padding: 3px;
 }
 header .link-hover:hover {
-  color: blueviolet;
-  background-color: aquamarine;
+  color: rgb(0, 0, 0);
+  background-color: rgb(48, 255, 186);
   transition-duration: 0.5s;
+}
+header #logo-pata {
+  background-color: transparent;
 }
 header .position {
   position: absolute;
@@ -216,12 +232,17 @@ footer {
   gap: 0;
 }
 footer a {
+  background-color: rgb(168, 167, 167);
   position: relative;
-  top: 5px;
+  top: 7px;
   right: 5vw;
+  box-shadow: 4px 4px 5px rgb(0, 0, 0);
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 5px;
+  border-radius: 5px;
 }
 footer a:hover {
-  background-color: aquamarine;
+  background-color: rgb(48, 255, 186);
 }
 
 .footer-contacto {
@@ -335,8 +356,10 @@ footer a:hover {
 }
 .imagenes div img {
   width: 350px;
+  height: 280px;
   border-radius: 5px;
   transition-duration: 0.2s;
+  object-fit: cover;
 }
 .imagenes div img:hover {
   transform: scale(1.05);
@@ -360,21 +383,26 @@ footer a:hover {
   border: 1px solid rgb(255, 255, 255);
   border-radius: 5px;
   background-color: rgb(94, 187, 156);
-  height: 100px;
+  height: 420px;
+  width: 320px;
   overflow: hidden;
   margin: 20px;
   padding: 5px;
   transition-duration: 0.2s;
 }
+.veterinarias div img {
+  width: 95%;
+  border-radius: 5px;
+}
 .veterinarias div:hover {
   background-color: rgb(83, 216, 172);
   box-shadow: 0px 0px 10px rgb(0, 0, 0);
   padding: 10px;
-  height: 320px;
+  height: 650px;
   transition-duration: 0.5s;
 }
 .veterinarias div:hover h3 {
-  color: blueviolet;
+  color: rgb(56, 13, 97);
 }
 
 .consejos {
@@ -421,7 +449,7 @@ footer a:hover {
   transition-duration: 0.5s;
 }
 .consejos .consejos-texto div:hover h3 {
-  color: blueviolet;
+  color: rgb(56, 13, 97);
 }
 .consejos .consejos-texto h3 {
   text-align: center;
@@ -474,7 +502,7 @@ footer a:hover {
   transition-duration: 0.5s;
 }
 .consejos .consejos-video div:hover h3 {
-  color: blueviolet;
+  color: rgb(56, 13, 97);
 }
 .consejos .consejos-video h3 {
   text-align: center;
@@ -625,7 +653,7 @@ footer a:hover {
 .tiendas .tienda .texto-tienda h5 {
   margin-top: 15px;
   text-decoration: underline;
-  color: blueviolet;
+  color: rgb(56, 13, 97);
 }
 .tiendas .tienda .texto-tienda img {
   width: 98%;
@@ -637,7 +665,7 @@ footer a:hover {
   height: 150px;
 }
 .tiendas .tienda:hover {
-  background-color: rgb(46, 226, 166);
+  background-color: rgb(89, 242, 191);
   box-shadow: 0 0 10px rgb(0, 0, 0);
   height: 500px;
   transition-duration: 0.5s;

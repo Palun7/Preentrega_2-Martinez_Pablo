@@ -7,6 +7,7 @@ header {
         border-radius: 5px;
         margin-left: 30px;
         transition-duration: .2s;
+        @include shadow;
 
         &:hover {
             position: relative;
@@ -23,6 +24,14 @@ header {
 
     .navbar-nav {
         gap: 10px;
+    }
+
+    .navbar-toggler {
+        @include shadow;
+        border: 2px solid $negro;
+        border-top: 1px solid rgb(233, 233, 233);
+        border-left: 1px solid rgb(233, 233, 233);
+        background-color: rgb(188, 188, 188);
     }
 
     .actual {
@@ -50,10 +59,14 @@ header {
         padding: 3px;
 
         &:hover {
-            color: $hover-text;
+            color: $negro;
             background-color: $hover-link;
             transition-duration: .5s;
         }
+    }
+
+    #logo-pata {
+        background-color: transparent;
     }
 
     .position {

@@ -14,8 +14,10 @@
 
         img {
             width: 350px;
+            height: 280px;
             border-radius: 5px;
             transition-duration: .2s;
+            object-fit: cover;
 
             &:hover {
                 // scale: 1.03;
