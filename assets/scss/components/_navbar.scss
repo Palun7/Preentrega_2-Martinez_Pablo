@@ -42,6 +42,8 @@ header {
         text-decoration: none;
         transition-duration: .3s;
         @include border;
+        border-bottom: 1px solid $negro;
+        border-right: 1px solid $negro;
         padding: 3px;
         position: relative;
         bottom: 3px;

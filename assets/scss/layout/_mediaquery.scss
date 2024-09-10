@@ -96,18 +96,43 @@
 
     .consejos .consejos-texto {
         width: 100%;
+        border: none;
+        background-color: transparent;
+    }
+
+    .consejos .consejos-video {
+        width: 100%;
+        border: none;
+        background-color: transparent;
     }
 
     .consejos .consejos-texto div {
-        width: 98%;
+        width: 100%;
         align-items: flex-start;
         flex-wrap: wrap;
         overflow: auto;
 
         h3 {
-            width: 90%;
+            width: 100%;
             display: flex;
             flex-wrap: wrap;
+        }
+    }
+
+    .consejos .consejos-video div {
+        width: 100%;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        overflow: auto;
+
+        h3 {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        iframe {
+            width: 98%;
         }
     }
 
@@ -165,7 +190,7 @@
     }
 
     .consejos .consejos-video {
-        width: 90%;
+        width: 100%;
         padding: 0;
     }
 }
